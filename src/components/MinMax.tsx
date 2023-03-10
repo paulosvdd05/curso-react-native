@@ -3,11 +3,11 @@ import { Text } from "react-native";
 import Estilo from './estilo';
 
 
-export default (props) => {
+export default ({min, max}) => {
     
     return (
         <Text style={Estilo.txtG}>
-            O valor {props.max} é maior que o valor {props.min}
+            O valor {max} é maior que o valor {min}
         </Text>
     )
 }
