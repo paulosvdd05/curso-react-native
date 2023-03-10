@@ -1,12 +1,21 @@
 import React from "react";
-import { View, Text } from "react-native"
+import  { View, Text, StyleSheet } from "react-native"
 
+import CompPadrao, { Comp1,Comp2 } from './components/Multi'
 import Primeiro from './components/Primeiro'
 
 export default () => (
-    <View>
-        <Text>{1+1}</Text>
+    <View style={style.App}>
+        <CompPadrao />
+        <Comp1/>
+        <Comp2/>
         <Primeiro />
     </View>
 )
+
+const style = StyleSheet.create({
+    App: {
+        
+    }
+})
 
