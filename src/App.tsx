@@ -2,8 +2,9 @@ import React from "react";
 import  { View, Text, StyleSheet } from "react-native"
 
 
+import Pai from "./components/direta/Pai"
 
-import Contador from "./components/Contador";
+// import Contador from "./components/Contador";
 // import Botao from "./components/Botao";
 // import Titulo from "./components/Titulo";
 // import CompPadrao, { Comp1,Comp2 } from './components/Multi'
@@ -13,11 +14,13 @@ import Contador from "./components/Contador";
 
 export default () => (
     <View style={style.App}>
-        <Contador inicial={100} passo={12} />
-        
+       
+        <Pai />
         
         
         {/*
+        <Contador inicial={100} passo={12} />
+        <Filho a={x} b={y} />
         <Botao />
         <Titulo principal="Cadastro Produto" secundario="Tela de cadastro do protudo"/> */}
         {/* <Aleatorio min={1} max={10} /> */}
