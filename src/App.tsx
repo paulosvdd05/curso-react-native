@@ -1,8 +1,10 @@
 import React from "react";
-import  { View, Text, StyleSheet } from "react-native"
+import  { View, Text, StyleSheet, SafeAreaView } from "react-native"
 
 
-import Diferenciar from "./components/Diferenciar";
+import ParImpar from "./components/ParImpar";
+
+// import Diferenciar from "./components/Diferenciar";
 // import ContadorV2 from "./components/contador/ContadorV2";
 // import Pai from "./components/indireta/Pai"
 // import Contador from "./components/Contador";
@@ -14,11 +16,12 @@ import Diferenciar from "./components/Diferenciar";
 // import Aleatorio from './components/aleatorio'
 
 export default () => (
-    <View style={style.App}>
-        <Diferenciar />
+    <SafeAreaView style={style.App}>
+        
 
-       
+        <ParImpar num={1}/>
         {/*
+        <Diferenciar />
         <ContadorV2 />
         <Pai /> 
         <Pai /> 
@@ -31,7 +34,7 @@ export default () => (
         <Comp1/>
         <Comp2/>
         <Primeiro /> */}
-    </View>
+    </SafeAreaView>
 )
 
 const style = StyleSheet.create({
